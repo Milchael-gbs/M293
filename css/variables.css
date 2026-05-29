@@ -1,0 +1,79 @@
+/* ============================================================
+   DESIGN TOKENS — exakt aus Figma-Screenshots
+   ============================================================ */
+:root {
+  /* === FIGMA PALETTE (exakt) === */
+  --sand:    #E1DAC8;
+  --stone:   #AD9372;
+  --coffee:  #B27E57;
+  --ochre:   #7F4C2F;
+  --gum:     #7E896B;
+  --moss:    #414C22;
+  --forest:  #193124;
+  --basalt:  #212E3F;
+
+  /* === SEMANTIK === */
+  --bg:          #EDE8DC;   /* Seite Hintergrund (heller als Sand) */
+  --bg-sand:     var(--sand);
+  --bg-card:     var(--coffee);      /* braune Cards */
+  --bg-card-alt: var(--forest);      /* grüne Cards */
+  --bg-header:   var(--basalt);      /* Dunkelblau Header-Boxen */
+  --surface:     #FFFFFF;
+
+  --border:     rgba(127,76,47,0.2);
+  --border-mid: rgba(127,76,47,0.35);
+
+  /* Text */
+  --text-dark:   var(--basalt);
+  --text-light:  var(--sand);
+  --text-muted:  var(--stone);
+  --text-on-coffee: #F5EDE0;
+  --text-on-forest: var(--sand);
+
+  /* === TYPOGRAPHY === */
+  --font: 'DM Sans', sans-serif;
+
+  /* Fluid sizes */
+  --fs-xs:   clamp(0.7rem,  1.4vw, 0.8rem);
+  --fs-sm:   clamp(0.85rem, 1.7vw, 0.95rem);
+  --fs-base: clamp(1rem,    1.9vw, 1.05rem);
+  --fs-md:   clamp(1.1rem,  2.1vw, 1.2rem);
+  --fs-lg:   clamp(1.35rem, 2.8vw, 1.65rem);
+  --fs-xl:   clamp(1.8rem,  4.5vw, 2.6rem);
+  --fs-2xl:  clamp(2.5rem,  6vw,   4rem);
+
+  /* === SPACING === */
+  --sp-1: 0.25rem;
+  --sp-2: 0.5rem;
+  --sp-3: 0.75rem;
+  --sp-4: 1rem;
+  --sp-5: 1.25rem;
+  --sp-6: 1.5rem;
+  --sp-8: 2rem;
+  --sp-10: 2.5rem;
+  --sp-12: 3rem;
+  --sp-16: 4rem;
+  --sp-20: 5rem;
+  --sp-24: 6rem;
+
+  /* === SHAPE === */
+  --r-sm:   0.5rem;
+  --r-md:   0.875rem;
+  --r-lg:   1.25rem;
+  --r-xl:   1.75rem;
+  --r-2xl:  2.5rem;   /* grosse Karten wie im Mockup */
+
+  /* === NAV === */
+  --nav-h: 4.5rem;
+
+  /* === TRANSITIONS === */
+  --t-fast: 140ms ease;
+  --t-base: 260ms ease;
+  --t-slow: 420ms ease;
+
+  /* === SHADOWS (warm) === */
+  --sh-sm:  0 2px 8px  rgba(33,46,63,0.12);
+  --sh-md:  0 4px 20px rgba(33,46,63,0.15);
+  --sh-lg:  0 8px 40px rgba(33,46,63,0.2);
+  --sh-warm:0 4px 24px rgba(127,76,47,0.22);
+}

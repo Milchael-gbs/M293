@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio von Michael Krumbacher — Projekte aus Ausbildung und privater Initiative." />
+  <title>Portfolio — Michael Krumbacher</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+</head>
+<body>
+
+<a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+<nav class="nav" role="navigation" aria-label="Hauptnavigation" id="nav">
+  <div class="container nav__inner">
+    <a href="index.html" class="nav__logo">MK<span>.</span></a>
+    <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Menü öffnen">
+      <span class="nav__toggle-bar"></span>
+      <span class="nav__toggle-bar"></span>
+      <span class="nav__toggle-bar"></span>
+    </button>
+    <ul class="nav__links" id="nav-menu" role="list">
+      <li><a href="index.html"     class="nav__link">Home</a></li>
+      <li><a href="about.html"     class="nav__link">Über mich</a></li>
+      <li><a href="skills.html"    class="nav__link">Fähigkeiten</a></li>
+      <li><a href="portfolio.html" class="nav__link active" aria-current="page">Portfolio</a></li>
+      <li><a href="contact.html"   class="nav__cta">Kontakt</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main id="main">
+
+  <!-- PAGE HEADER -->
+  <section class="portfolio-page section--bg" aria-labelledby="port-title">
+    <div class="container">
+      <span class="label">Meine Arbeiten</span>
+      <div class="section-header-box" id="port-title">Portfolio</div>
+      <p class="section-intro">
+        Eine Auswahl meiner Projekte aus der Ausbildung und eigener Initiative.
+      </p>
+
+      <!-- FEATURED PROJECT -->
+      <div class="port-featured" role="article" aria-labelledby="feat-title">
+        <!--
+          Screenshot einfügen:
+          <img src="assets/images/project-main.jpg" alt="Screenshot Personal Website M293"
+               style="width:100%;height:100%;object-fit:cover;" loading="lazy" />
+        -->
+        <div class="port-featured__img-wrap" aria-label="Projekt-Screenshot Platzhalter">
+          <div style="display:flex;flex-direction:column;align-items:center;gap:var(--sp-4);">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            <span style="font-size:var(--fs-sm);">Screenshot einfügen</span>
+          </div>
+        </div>
+
+        <div class="port-featured__body">
+          <p class="port-featured__kicker">Hauptprojekt · M293</p>
+          <h2 class="port-featured__title" id="feat-title">Personal Website</h2>
+          <p class="port-featured__desc">
+            Im Modul M293 habe ich diese vollständige Personal Website erstellt.
+            Konzipiert in Figma mit Personas, Wireframes und Mockups — umgesetzt
+            mit reinem HTML &amp; CSS ohne jedes Framework. Responsive für alle
+            Geräte und veröffentlicht auf GitHub Pages.
+          </p>
+          <div style="display:flex;flex-wrap:wrap;gap:var(--sp-2);margin-bottom:var(--sp-8);" role="list" aria-label="Technologien">
+            <span class="tag tag--sand" role="listitem">HTML5</span>
+            <span class="tag tag--sand" role="listitem">CSS3</span>
+            <span class="tag tag--sand" role="listitem">Figma</span>
+            <span class="tag tag--sand" role="listitem">GitHub Pages</span>
+            <span class="tag tag--sand" role="listitem">Responsive</span>
+          </div>
+          <div style="display:flex;gap:var(--sp-4);flex-wrap:wrap;">
+            <a href="https://github.com/Milchael-gbs/M293" target="_blank" rel="noopener" class="btn btn--outline-light">GitHub ansehen</a>
+            <a href="https://milchael-gbs.github.io/M293" target="_blank" rel="noopener" class="btn btn--outline-light">Live Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT GRID -->
+      <h2 class="section-title">Alle Projekte</h2>
+      <div class="port-grid" role="list">
+
+        <article class="port-card" role="listitem" aria-labelledby="p1-title">
+          <div class="port-card__ph" aria-label="Screenshot Projekt 1">Screenshot einfügen</div>
+          <div class="port-card__body">
+            <div class="port-card__tags" role="list" aria-label="Technologien">
+              <span class="tag tag--green" role="listitem">HTML</span>
+              <span class="tag tag--green" role="listitem">CSS</span>
+            </div>
+            <h3 class="port-card__title" id="p1-title">Schulprojekt 1</h3>
+            <p class="port-card__desc">Kurze Beschreibung. Was hast du gelernt, was war die Herausforderung und was hast du erreicht?</p>
+            <a href="#" class="port-card__link" aria-label="Schulprojekt 1 auf GitHub">Auf GitHub</a>
+          </div>
+        </article>
+
+        <article class="port-card" role="listitem" aria-labelledby="p2-title">
+          <div class="port-card__ph" aria-label="Screenshot Projekt 2">Screenshot einfügen</div>
+          <div class="port-card__body">
+            <div class="port-card__tags" role="list" aria-label="Technologien">
+              <span class="tag" role="listitem">Python</span>
+              <span class="tag" role="listitem">CLI</span>
+            </div>
+            <h3 class="port-card__title" id="p2-title">Schulprojekt 2</h3>
+            <p class="port-card__desc">Kurze Beschreibung. Was hast du gelernt, was war die Herausforderung und was hast du erreicht?</p>
+            <a href="#" class="port-card__link" aria-label="Schulprojekt 2 auf GitHub">Auf GitHub</a>
+          </div>
+        </article>
+
+        <article class="port-card" role="listitem" aria-labelledby="p3-title">
+          <div class="port-card__ph" aria-label="Screenshot Projekt 3">Screenshot einfügen</div>
+          <div class="port-card__body">
+            <div class="port-card__tags" role="list" aria-label="Technologien">
+              <span class="tag" role="listitem">SQL</span>
+              <span class="tag" role="listitem">Datenbank</span>
+            </div>
+            <h3 class="port-card__title" id="p3-title">Schulprojekt 3</h3>
+            <p class="port-card__desc">Kurze Beschreibung. Was hast du gelernt, was war die Herausforderung und was hast du erreicht?</p>
+            <a href="#" class="port-card__link" aria-label="Schulprojekt 3 auf GitHub">Auf GitHub</a>
+          </div>
+        </article>
+
+        <article class="port-card" role="listitem" aria-labelledby="p4-title">
+          <div class="port-card__ph" aria-label="Screenshot Eigenprojekt">Screenshot einfügen</div>
+          <div class="port-card__body">
+            <div class="port-card__tags" role="list" aria-label="Technologien">
+              <span class="tag" role="listitem">Eigenprojekt</span>
+            </div>
+            <h3 class="port-card__title" id="p4-title">Eigenprojekt</h3>
+            <p class="port-card__desc">Privates Projekt ausserhalb der Schule. Zeigt eigenständige Initiative und persönliches Interesse.</p>
+            <a href="#" class="port-card__link" aria-label="Eigenprojekt auf GitHub">Auf GitHub</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERIE -->
+  <section class="section section--sand" aria-labelledby="gallery-title">
+    <div class="container">
+      <span class="label">Eindrücke</span>
+      <h2 class="section-title" id="gallery-title">Screenshots &amp; Galerie</h2>
+      <p class="section-intro">Visuelle Einblicke in meine Arbeiten — Screenshots, Designs und Skizzen.</p>
+
+      <div class="gallery-grid" role="list" aria-label="Bildergalerie">
+        <!--
+          BILDER EINFÜGEN:
+          <img src="assets/images/gallery-1.jpg" alt="..." class="gallery-ph" loading="lazy" />
+        -->
+        <div class="gallery-ph" role="listitem" aria-label="Galerie-Bild 1 Platzhalter">Bild 1</div>
+        <div class="gallery-ph" role="listitem" aria-label="Galerie-Bild 2 Platzhalter">Bild 2</div>
+        <div class="gallery-ph" role="listitem" aria-label="Galerie-Bild 3 Platzhalter">Bild 3</div>
+        <div class="gallery-ph" role="listitem" aria-label="Galerie-Bild 4 Platzhalter">Bild 4</div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__grid">
+      <div><div class="footer__logo">MK<span>.</span></div><p class="footer__tagline">Informatiker in Ausbildung — GBS St.Gallen</p></div>
+      <nav aria-label="Footernavigation"><ul class="footer__links" role="list"><li><a href="about.html" class="footer__link">Über mich</a></li><li><a href="skills.html" class="footer__link">Fähigkeiten</a></li><li><a href="portfolio.html" class="footer__link">Portfolio</a></li><li><a href="contact.html" class="footer__link">Kontakt</a></li></ul></nav>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copy">© 2025 Michael Krumbacher · Schulprojekt M293 · GBS St.Gallen</p>
+      <div class="footer__socials" aria-label="Social Media"><a href="https://github.com/Milchael-gbs" target="_blank" rel="noopener" class="footer__social" aria-label="GitHub">GH</a><a href="#" class="footer__social" aria-label="LinkedIn">in</a></div>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){var t=document.querySelector('.nav__toggle'),m=document.querySelector('.nav__links'),n=document.getElementById('nav');if(!t||!m)return;t.addEventListener('click',function(){var o=t.getAttribute('aria-expanded')==='true';t.setAttribute('aria-expanded',String(!o));m.classList.toggle('open');});document.addEventListener('click',function(e){if(!e.target.closest('.nav')){t.setAttribute('aria-expanded','false');m.classList.remove('open');}});window.addEventListener('scroll',function(){n.classList.toggle('scrolled',window.scrollY>40);},{passive:true});})();
+</script>
+</body>
+</html>

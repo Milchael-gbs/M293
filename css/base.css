@@ -1,0 +1,88 @@
+/* ============================================================
+   RESET & BASE
+   ============================================================ */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+
+body {
+  font-family: var(--font);
+  font-size: var(--fs-base);
+  line-height: 1.65;
+  color: var(--text-dark);
+  background-color: var(--bg);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, video { max-width: 100%; height: auto; display: block; }
+a { color: inherit; text-decoration: none; }
+ul, ol { list-style: none; }
+button, input, textarea, select { font: inherit; color: inherit; }
+button { cursor: pointer; border: none; background: none; }
+h1,h2,h3,h4,h5,h6 { font-family: var(--font); line-height: 1.2; color: var(--text-dark); }
+p { line-height: 1.7; }
+
+/* === LAYOUT === */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: var(--sp-10);
+}
+
+.section { padding-block: var(--sp-24); }
+.section--sm { padding-block: var(--sp-16); }
+.section--sand { background-color: var(--bg-sand); }
+.section--bg   { background-color: var(--bg); }
+
+/* === TYPOGRAPHY HELPERS === */
+.label {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--coffee);
+  margin-bottom: var(--sp-3);
+}
+.label::before {
+  content: '';
+  width: 1.25rem; height: 2px;
+  background: var(--coffee);
+  border-radius: 1px;
+  flex-shrink: 0;
+}
+
+.section-title {
+  font-size: var(--fs-xl);
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: var(--sp-4);
+}
+.section-intro {
+  max-width: 52ch;
+  color: var(--stone);
+  font-size: var(--fs-md);
+  line-height: 1.8;
+  margin-bottom: var(--sp-12);
+}
+
+/* === SKIP LINK === */
+.skip-link {
+  position: absolute; top: -100%; left: var(--sp-4);
+  background: var(--coffee); color: #fff;
+  padding: var(--sp-2) var(--sp-4);
+  border-radius: var(--r-sm); font-weight: 600; z-index: 9999;
+  transition: top var(--t-fast);
+}
+.skip-link:focus { top: var(--sp-4); }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); }
+
+/* === DIVIDER === */
+.divider {
+  width: 3rem; height: 3px;
+  background: linear-gradient(90deg, var(--coffee), var(--moss));
+  border-radius: 2px; margin-bottom: var(--sp-10);
+}

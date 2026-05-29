@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Fähigkeiten und Stärken von Michael Krumbacher — HTML, CSS, Python, Git und mehr." />
+  <title>Fähigkeiten — Michael Krumbacher</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+</head>
+<body>
+
+<a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+<nav class="nav" role="navigation" aria-label="Hauptnavigation" id="nav">
+  <div class="container nav__inner">
+    <a href="index.html" class="nav__logo">MK<span>.</span></a>
+    <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Menü öffnen">
+      <span class="nav__toggle-bar"></span>
+      <span class="nav__toggle-bar"></span>
+      <span class="nav__toggle-bar"></span>
+    </button>
+    <ul class="nav__links" id="nav-menu" role="list">
+      <li><a href="index.html"     class="nav__link">Home</a></li>
+      <li><a href="about.html"     class="nav__link">Über mich</a></li>
+      <li><a href="skills.html"    class="nav__link active" aria-current="page">Fähigkeiten</a></li>
+      <li><a href="portfolio.html" class="nav__link">Portfolio</a></li>
+      <li><a href="contact.html"   class="nav__cta">Kontakt</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main id="main">
+
+  <!-- PAGE HEADER -->
+  <section class="skills-page section--bg" aria-labelledby="skills-title">
+    <div class="container">
+      <span class="label">Was ich kann</span>
+      <div class="section-header-box" id="skills-title">Fähigkeiten &amp; Stärken</div>
+      <p class="section-intro">
+        Im Verlauf meiner Ausbildung habe ich sowohl technische als auch
+        methodische Kompetenzen aufgebaut. Hier ist ein Überblick.
+      </p>
+
+      <!-- === TECH SKILLS — braune und grüne Karten === -->
+      <div class="skills-grid">
+
+        <!-- Web -->
+        <article class="skill-cat fig-card--coffee" aria-labelledby="web-cat">
+          <div class="skill-cat__icon" aria-hidden="true">🌐</div>
+          <h3 class="skill-cat__title" id="web-cat">Web-Entwicklung</h3>
+          <ul class="skill-cat__list" role="list">
+            <li class="skill-item" role="listitem">
+              <div class="skill-item__head">
+                <span class="skill-item__name">HTML5</span>
+                <span class="skill-item__pct" aria-label="90 Prozent">90%</span>
+              </div>
+              <div class="skill-track" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                <div class="skill-fill" style="width:90%;"></div>
+              </div>
+            </li>
+            <li class="skill-item" role="listitem">
+              <div class="skill-item__head">
+                <span class="skill-item__name">CSS3 / Flexbox / Grid</span>
+                <span class="skill-item__pct" aria-label="85 Prozent">85%</span>
+              </div>
+              <div class="skill-track" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                <div class="skill-fill" style="width:85%;"></div>
+              </div>
+            </li>
+            <li class="skill-item" role="listitem">
+              <div class="skill-item__head">
+                <span class="skill-item__name">Responsive Design</span>
+                <span class="skill-item__pct" aria-label="80 Prozent">80%</span>
+              </div>
+              <div class="skill-track" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                <div class="skill-fill" style="width:80%;"></div>
+              </div>
+            </li>
+            <li class="skill-item" role="listitem">
+              <div class="skill-item__head">
+                <span class="skill-item__name">JavaScript (Grundlagen)</span>
+                <span class="skill-item__pct" aria-label="55 Prozent">55%</span>
+              </div>
+              <div class="skill-track" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+                <div class="skill-fill" style="width:55%;"></div>
+              </div>
+            </li>
+          </ul>
+        </article>
+
+        <!-- Programmierung -->
+        <article class="skill-cat fig-card--forest" aria-labelledby="prog-cat">
+          <div class="skill-cat__icon" aria-hidden="true">💻</div>
+          <h3 class="skill-cat__title" id="prog-cat">Programmierung</h3>
+          <ul class="skill-cat__list" role="list">
+            <li class="skill-item" role="listitem">
+              <div class="skill-item__head">
+                <span class="skill-item__name">Python</span>
+                <span class="skill-item__pct" aria-label="65 Prozent">65%</span>
+              </div>
+              <div class="skill-track" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                <div class="skill-fill" style="width:65%;"></div>
+              </div>
+            </li>
+            <li class="skill-item" role="listitem">
+              <div class="skill-item__head">
+                <span class="skill-item__name">Java (Grundlagen)</span>
+                <span class="skill-item__pct" aria-label="50 Prozent">50%</span>
+              </div>
+              <div class="skill-track" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                <div class="skill-fill" style="width:50%;"></div>
+              </div>
+            </li>
+            <li class="skill-item" role="listitem">
+              <div class="skill-item__head">
+                <span class="skill-item__name">SQL</span>
+                <span class="skill-item__pct" aria-label="60 Prozent">60%</span>
+              </div>
+              <div class="skill-track" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                <div class="skill-fill" style="width:60%;"></div>
+              </div>
+            </li>
+            <li class="skill-item" role="listitem">
+              <div class="skill-item__head">
+                <span class="skill-item__name">Bash / Shell</span>
+                <span class="skill-item__pct" aria-label="45 Prozent">45%</span>
+              </div>
+              <div class="skill-track" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">
+                <div class="skill-fill" style="width:45%;"></div>
+              </div>
+            </li>
+          </ul>
+        </article>
+
+        <!-- Tools -->
+        <article class="skill-cat fig-card--moss" aria-labelledby="tools-cat">
+          <div class="skill-cat__icon" aria-hidden="true">🔧</div>
+          <h3 class="skill-cat__title" id="tools-cat">Tools &amp; Umgebungen</h3>
+          <ul class="skill-cat__list" role="list">
+            <li class="skill-item" role="listitem">
+              <div class="skill-item__head">
+                <span class="skill-item__name">Visual Studio Code</span>
+                <span class="skill-item__pct" aria-label="90 Prozent">90%</span>
+              </div>
+              <div class="skill-track" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                <div class="skill-fill" style="width:90%;"></div>
+              </div>
+            </li>
+            <li class="skill-item" role="listitem">
+              <div class="skill-item__head">
+                <span class="skill-item__name">Git &amp; GitHub</span>
+                <span class="skill-item__pct" aria-label="75 Prozent">75%</span>
+              </div>
+              <div class="skill-track" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                <div class="skill-fill" style="width:75%;"></div>
+              </div>
+            </li>
+            <li class="skill-item" role="listitem">
+              <div class="skill-item__head">
+                <span class="skill-item__name">Figma</span>
+                <span class="skill-item__pct" aria-label="70 Prozent">70%</span>
+              </div>
+              <div class="skill-track" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                <div class="skill-fill" style="width:70%;"></div>
+              </div>
+            </li>
+            <li class="skill-item" role="listitem">
+              <div class="skill-item__head">
+                <span class="skill-item__name">Linux / Windows</span>
+                <span class="skill-item__pct" aria-label="70 Prozent">70%</span>
+              </div>
+              <div class="skill-track" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                <div class="skill-fill" style="width:70%;"></div>
+              </div>
+            </li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SOFT SKILLS -->
+  <section class="section section--sand" aria-labelledby="soft-title">
+    <div class="container">
+      <span class="label">Persönlichkeit</span>
+      <h2 class="section-title" id="soft-title">Soft Skills</h2>
+      <p class="section-intro">Diese persönlichen Stärken bringe ich mit.</p>
+
+      <div class="soft-grid" role="list">
+        <article class="soft-card" role="listitem">
+          <div class="soft-card__icon" aria-hidden="true">🤝</div>
+          <div class="soft-card__label">Teamarbeit</div>
+        </article>
+        <article class="soft-card" role="listitem">
+          <div class="soft-card__icon" aria-hidden="true">🧩</div>
+          <div class="soft-card__label">Problemlösung</div>
+        </article>
+        <article class="soft-card" role="listitem">
+          <div class="soft-card__icon" aria-hidden="true">📚</div>
+          <div class="soft-card__label">Lernbereitschaft</div>
+        </article>
+        <article class="soft-card" role="listitem">
+          <div class="soft-card__icon" aria-hidden="true">🗣️</div>
+          <div class="soft-card__label">Kommunikation</div>
+        </article>
+        <article class="soft-card" role="listitem">
+          <div class="soft-card__icon" aria-hidden="true">⏰</div>
+          <div class="soft-card__label">Zeitmanagement</div>
+        </article>
+        <article class="soft-card" role="listitem">
+          <div class="soft-card__icon" aria-hidden="true">🎯</div>
+          <div class="soft-card__label">Zielorientierung</div>
+        </article>
+        <article class="soft-card" role="listitem">
+          <div class="soft-card__icon" aria-hidden="true">🔍</div>
+          <div class="soft-card__label">Genauigkeit</div>
+        </article>
+        <article class="soft-card" role="listitem">
+          <div class="soft-card__icon" aria-hidden="true">💡</div>
+          <div class="soft-card__label">Kreativität</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECH STACK TAGS -->
+  <section class="section section--bg" aria-labelledby="stack-title">
+    <div class="container">
+      <span class="label">Technologien</span>
+      <h2 class="section-title" id="stack-title">Tech-Stack</h2>
+      <div style="display:flex;flex-wrap:wrap;gap:var(--sp-3);" role="list" aria-label="Technologien">
+        <span class="tag tag--green" role="listitem">HTML5</span>
+        <span class="tag tag--green" role="listitem">CSS3</span>
+        <span class="tag tag--green" role="listitem">JavaScript</span>
+        <span class="tag" role="listitem">Python</span>
+        <span class="tag" role="listitem">Java</span>
+        <span class="tag" role="listitem">SQL</span>
+        <span class="tag" role="listitem">Git</span>
+        <span class="tag" role="listitem">GitHub</span>
+        <span class="tag" role="listitem">GitHub Pages</span>
+        <span class="tag" role="listitem">VS Code</span>
+        <span class="tag" role="listitem">Figma</span>
+        <span class="tag" role="listitem">Linux</span>
+        <span class="tag" role="listitem">Windows</span>
+        <span class="tag" role="listitem">Responsive Design</span>
+        <span class="tag" role="listitem">Flexbox</span>
+        <span class="tag" role="listitem">CSS Grid</span>
+        <span class="tag" role="listitem">Bash</span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__grid">
+      <div><div class="footer__logo">MK<span>.</span></div><p class="footer__tagline">Informatiker in Ausbildung — GBS St.Gallen</p></div>
+      <nav aria-label="Footernavigation"><ul class="footer__links" role="list"><li><a href="about.html" class="footer__link">Über mich</a></li><li><a href="skills.html" class="footer__link">Fähigkeiten</a></li><li><a href="portfolio.html" class="footer__link">Portfolio</a></li><li><a href="contact.html" class="footer__link">Kontakt</a></li></ul></nav>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copy">© 2025 Michael Krumbacher · Schulprojekt M293 · GBS St.Gallen</p>
+      <div class="footer__socials" aria-label="Social Media"><a href="https://github.com/Milchael-gbs" target="_blank" rel="noopener" class="footer__social" aria-label="GitHub">GH</a><a href="#" class="footer__social" aria-label="LinkedIn">in</a></div>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){var t=document.querySelector('.nav__toggle'),m=document.querySelector('.nav__links'),n=document.getElementById('nav');if(!t||!m)return;t.addEventListener('click',function(){var o=t.getAttribute('aria-expanded')==='true';t.setAttribute('aria-expanded',String(!o));m.classList.toggle('open');});document.addEventListener('click',function(e){if(!e.target.closest('.nav')){t.setAttribute('aria-expanded','false');m.classList.remove('open');}});window.addEventListener('scroll',function(){n.classList.toggle('scrolled',window.scrollY>40);},{passive:true});})();
+</script>
+</body>
+</html>

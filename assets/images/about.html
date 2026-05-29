@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Über Michael Krumbacher — Biografie, Qualifikationen und Werdegang. Lernender Informatiker EFZ, GBS St.Gallen." />
+  <title>Über mich — Michael Krumbacher</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+</head>
+<body>
+
+<a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+<nav class="nav" role="navigation" aria-label="Hauptnavigation" id="nav">
+  <div class="container nav__inner">
+    <a href="index.html" class="nav__logo">MK<span>.</span></a>
+    <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Menü öffnen">
+      <span class="nav__toggle-bar"></span>
+      <span class="nav__toggle-bar"></span>
+      <span class="nav__toggle-bar"></span>
+    </button>
+    <ul class="nav__links" id="nav-menu" role="list">
+      <li><a href="index.html"     class="nav__link">Home</a></li>
+      <li><a href="about.html"     class="nav__link active" aria-current="page">Über mich</a></li>
+      <li><a href="skills.html"    class="nav__link">Fähigkeiten</a></li>
+      <li><a href="portfolio.html" class="nav__link">Portfolio</a></li>
+      <li><a href="contact.html"   class="nav__cta">Kontakt</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main id="main">
+
+  <section class="about-hero section--bg" aria-labelledby="about-title">
+    <div class="container">
+      <span class="label">Persönliche Seite</span>
+      <div class="section-header-box" id="about-title">Über mich</div>
+
+      <div class="about-main-card" role="region" aria-label="Biografie">
+        <div class="about-photo-box">
+          <img
+            src="assets/images/portrait.jpg"
+            alt="Portrait von Michael Krumbacher"
+            class="about-photo"
+            width="220" height="293"
+            loading="eager"
+          />
+          <div class="about-name-tag">Michael Krumbacher</div>
+        </div>
+
+        <div class="about-bio">
+          <p class="about-bio__role">Informatiker EFZ · GBS St.Gallen</p>
+          <h2 class="about-bio__title">Biographie</h2>
+          <p class="about-bio__text">
+            Lernender am GBS St.&nbsp;Gallen als Informatiker EFZ.
+            Ich entwickle saubere, strukturierte Lösungen für Web und Software —
+            mit Leidenschaft für modernes Design und funktionalen Code.
+          </p>
+          <p class="about-bio__text">
+            Mein Ziel ist es, in der Informatikbranche Fuss zu fassen und
+            kontinuierlich zu wachsen — sowohl fachlich als auch persönlich.
+          </p>
+          <div class="about-details" role="list">
+            <div class="about-detail" role="listitem">
+              <div class="about-detail__key">Ausbildung</div>
+              <div class="about-detail__val">Informatiker EFZ</div>
+            </div>
+            <div class="about-detail" role="listitem">
+              <div class="about-detail__key">Schule</div>
+              <div class="about-detail__val">GBS St.Gallen</div>
+            </div>
+            <div class="about-detail" role="listitem">
+              <div class="about-detail__key">Abitur</div>
+              <div class="about-detail__val">Abgeschlossen 2025</div>
+            </div>
+            <div class="about-detail" role="listitem">
+              <div class="about-detail__key">Zivilstand</div>
+              <div class="about-detail__val">Verheiratet</div>
+            </div>
+            <div class="about-detail" role="listitem">
+              <div class="about-detail__key">Wohnort</div>
+              <div class="about-detail__val">St.Gallen, Schweiz</div>
+            </div>
+            <div class="about-detail" role="listitem">
+              <div class="about-detail__key">Sprachen</div>
+              <div class="about-detail__val">Deutsch, Englisch B2</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-contact-card" role="region" aria-label="Kontaktinformationen">
+        <div>
+          <p class="contact-card__heading">Kontaktinformationen</p>
+          <div class="contact-method contact-method--spaced">
+            <div class="contact-method__icon" aria-hidden="true">✉️</div>
+            <div>
+              <div class="contact-method__key">E-Mail</div>
+              <div class="contact-method__val">
+                <a href="mailto:Michael.Krumbacher@edu.gbssg.ch">Michael.K@edu.gbssg.ch</a>
+              </div>
+            </div>
+          </div>
+          <div class="contact-method contact-method--spaced">
+            <div class="contact-method__icon" aria-hidden="true">📱</div>
+            <div>
+              <div class="contact-method__key">Telefon</div>
+              <div class="contact-method__val">+41 xxxxxxxxx</div>
+            </div>
+          </div>
+          <div class="contact-method">
+            <div class="contact-method__icon" aria-hidden="true">💼</div>
+            <div>
+              <div class="contact-method__key">LinkedIn</div>
+              <div class="contact-method__val">
+                <a href="#" target="_blank" rel="noopener">xxxxxx.xxxxx</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-card-links">
+          <p class="contact-card__heading">Schnell-Links</p>
+          <div class="contact-card-links__list">
+            <a href="skills.html" class="btn btn--outline-light">→ Fähigkeiten ansehen</a>
+            <a href="portfolio.html" class="btn btn--outline-light">→ Portfolio ansehen</a>
+            <a href="contact.html" class="btn btn--outline-light">→ Kontakt aufnehmen</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section section--sand" aria-labelledby="qual-title">
+    <div class="container">
+      <span class="label">Bildung &amp; Abschlüsse</span>
+      <div class="section-header-box" id="qual-title">Qualifikationen</div>
+
+      <div class="qual-grid">
+
+        <div class="fig-card fig-card--forest" role="region" aria-labelledby="faehigkeiten-box">
+          <h3 class="fig-card__title" id="faehigkeiten-box">Fähigkeiten</h3>
+          <ul class="qual-list">
+            <li class="qual-list__item">Matura</li>
+            <li class="qual-list__item">Abitur 1.9 NC</li>
+            <li class="qual-list__item">Englisch B2</li>
+            <li class="qual-list__item">Latinum</li>
+            <li class="qual-list__item">HTML &amp; CSS (M293)</li>
+            <li class="qual-list__item">Git &amp; GitHub</li>
+          </ul>
+        </div>
+
+        <div class="fig-card fig-card--coffee" role="region" aria-labelledby="portfolio-box">
+          <h3 class="fig-card__title" id="portfolio-box">Portfolio Dokumente</h3>
+          <p class="fig-card__text doc-intro">
+            Hier sind meine wichtigsten Zeugnisse und Zertifikate.
+            Auf Anfrage stehe ich dir gerne für weitere Informationen zur Verfügung.
+          </p>
+          <div class="doc-grid">
+            <div class="doc-item">
+              <div class="doc-item__icon" aria-hidden="true">📄</div>
+              <div class="doc-item__label">Zeugnis</div>
+            </div>
+            <div class="doc-item">
+              <div class="doc-item__icon" aria-hidden="true">📜</div>
+              <div class="doc-item__label">Zertifikat</div>
+            </div>
+            <div class="doc-item">
+              <div class="doc-item__icon" aria-hidden="true">🏆</div>
+              <div class="doc-item__label">Diplom</div>
+            </div>
+            <div class="doc-item">
+              <div class="doc-item__icon" aria-hidden="true">📋</div>
+              <div class="doc-item__label">Bericht</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--bg" aria-labelledby="video-title">
+    <div class="container">
+      <span class="label">Stell dir vor</span>
+      <h2 class="section-title" id="video-title">In 60 Sekunden — wer ich bin</h2>
+      <p class="section-intro">Ein kurzes Video gibt dir einen persönlichen Einblick.</p>
+      <div class="video-wrap">
+        <video controls preload="metadata" poster="assets/images/video-thumb.jpg"
+               aria-label="Vorstellungsvideo Michael Krumbacher">
+          <source src="assets/videos/intro.mp4" type="video/mp4" />
+          <source src="assets/videos/intro.webm" type="video/webm" />
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--sand" aria-labelledby="timeline-title">
+    <div class="container">
+      <span class="label">Mein Weg</span>
+      <h2 class="section-title" id="timeline-title">Werdegang</h2>
+      <div class="timeline" role="list">
+        <div class="tl-item" role="listitem">
+          <div class="tl-year-col"><span class="tl-year">2023</span></div>
+          <div class="tl-body">
+            <h3 class="tl-title">Beginn Informatiker EFZ</h3>
+            <p class="tl-text">Ausbildungsstart an der GBS St.Gallen. Erste Schritte in HTML, CSS, Programmierlogik und Netzwerktechnik.</p>
+          </div>
+        </div>
+        <div class="tl-item" role="listitem">
+          <div class="tl-year-col"><span class="tl-year">2025</span></div>
+          <div class="tl-body">
+            <h3 class="tl-title">Abitur abgeschlossen</h3>
+            <p class="tl-text">Erfolgreich das Abitur an der GBS St.Gallen abgeschlossen mit Note 1.9 NC.</p>
+          </div>
+        </div>
+        <div class="tl-item" role="listitem">
+          <div class="tl-year-col"><span class="tl-year">2025</span></div>
+          <div class="tl-body">
+            <h3 class="tl-title">Modul M293 — Webauftritt</h3>
+            <p class="tl-text">Erstellung dieser Personal Website: Konzept in Figma, Umsetzung in HTML &amp; CSS, Veröffentlichung auf GitHub Pages.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__logo">MK<span>.</span></div>
+        <p class="footer__tagline">Informatiker in Ausbildung — GBS St.Gallen</p>
+      </div>
+      <nav aria-label="Footernavigation">
+        <ul class="footer__links" role="list">
+          <li><a href="about.html"     class="footer__link">Über mich</a></li>
+          <li><a href="skills.html"    class="footer__link">Fähigkeiten</a></li>
+          <li><a href="portfolio.html" class="footer__link">Portfolio</a></li>
+          <li><a href="contact.html"   class="footer__link">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copy">© 2025 Michael Krumbacher · Schulprojekt M293 · GBS St.Gallen</p>
+      <div class="footer__socials" aria-label="Social Media">
+        <a href="https://github.com/Milchael-gbs" target="_blank" rel="noopener" class="footer__social" aria-label="GitHub">GH</a>
+        <a href="#" class="footer__social" aria-label="LinkedIn">in</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var toggle=document.querySelector('.nav__toggle'),menu=document.querySelector('.nav__links'),nav=document.getElementById('nav');
+  if(!toggle||!menu)return;
+  toggle.addEventListener('click',function(){var o=toggle.getAttribute('aria-expanded')==='true';toggle.setAttribute('aria-expanded',String(!o));menu.classList.toggle('open');});
+  document.addEventListener('click',function(e){if(!e.target.closest('.nav')){toggle.setAttribute('aria-expanded','false');menu.classList.remove('open');}});
+  window.addEventListener('scroll',function(){nav.classList.toggle('scrolled',window.scrollY>40);},{passive:true});
+})();
+</script>
+</body>
+</html>

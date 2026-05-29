@@ -19,7 +19,6 @@
 
 <a class="skip-link" href="#main">Zum Inhalt springen</a>
 
-<!-- NAV -->
 <nav class="nav" role="navigation" aria-label="Hauptnavigation" id="nav">
   <div class="container nav__inner">
     <a href="index.html" class="nav__logo">MK<span>.</span></a>
@@ -38,37 +37,25 @@
   </div>
 </nav>
 
-<!-- MAIN -->
 <main id="main">
 
-  <!-- ===== SECTION: ÜBER MICH (direkt aus Figma Screenshot 3) ===== -->
   <section class="about-hero section--bg" aria-labelledby="about-title">
     <div class="container">
       <span class="label">Persönliche Seite</span>
-
-      <!-- Seiten-Titel im Figma-Stil: Basalt-Box mit Sand-Text -->
       <div class="section-header-box" id="about-title">Über mich</div>
 
-      <!-- Haupt-Card: Kaffee-Hintergrund, Foto links + Biografie rechts -->
       <div class="about-main-card" role="region" aria-label="Biografie">
-
-        <!-- Foto + Name-Tag -->
         <div class="about-photo-box">
-            <img
-              src="assets/images/portrait.jpg"
-              alt="Portrait von Michael Krumbacher"
-              class="about-photo"
-              width="220" height="293"
-              loading="eager"
-            />
-          <div class="about-photo-ph" role="img" aria-label="Portrait Michael Krumbacher — Foto hier einfügen">
-            <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
-            <span>Foto einfügen</span>
-          </div>
+          <img
+            src="assets/images/portrait.jpg"
+            alt="Portrait von Michael Krumbacher"
+            class="about-photo"
+            width="220" height="293"
+            loading="eager"
+          />
           <div class="about-name-tag">Michael Krumbacher</div>
         </div>
 
-        <!-- Biografie Text (aus Screenshot: Lernender GBS, Abitur, verheiratet) -->
         <div class="about-bio">
           <p class="about-bio__role">Informatiker EFZ · GBS St.Gallen</p>
           <h2 class="about-bio__title">Biographie</h2>
@@ -81,8 +68,6 @@
             Mein Ziel ist es, in der Informatikbranche Fuss zu fassen und
             kontinuierlich zu wachsen — sowohl fachlich als auch persönlich.
           </p>
-
-          <!-- Details-Grid (aus Figma-Mockup) -->
           <div class="about-details" role="list">
             <div class="about-detail" role="listitem">
               <div class="about-detail__key">Ausbildung</div>
@@ -110,15 +95,12 @@
             </div>
           </div>
         </div>
+      </div>
 
-      </div><!-- /.about-main-card -->
-
-      <!-- Kontaktinformationen — Forest-Card (aus Figma Screenshot 3) -->
       <div class="about-contact-card" role="region" aria-label="Kontaktinformationen">
-
         <div>
-          <p style="font-size:var(--fs-sm);font-weight:700;letter-spacing:0.1em;text-transform:uppercase;opacity:0.6;margin-bottom:var(--sp-4);">Kontaktinformationen</p>
-          <div class="contact-method" style="margin-bottom:var(--sp-4);">
+          <p class="contact-card__heading">Kontaktinformationen</p>
+          <div class="contact-method contact-method--spaced">
             <div class="contact-method__icon" aria-hidden="true">✉️</div>
             <div>
               <div class="contact-method__key">E-Mail</div>
@@ -127,7 +109,7 @@
               </div>
             </div>
           </div>
-          <div class="contact-method" style="margin-bottom:var(--sp-4);">
+          <div class="contact-method contact-method--spaced">
             <div class="contact-method__icon" aria-hidden="true">📱</div>
             <div>
               <div class="contact-method__key">Telefon</div>
@@ -145,65 +127,60 @@
           </div>
         </div>
 
-        <div>
-          <p style="font-size:var(--fs-sm);font-weight:700;letter-spacing:0.1em;text-transform:uppercase;opacity:0.6;margin-bottom:var(--sp-4);">Schnell-Links</p>
-          <div style="display:flex;flex-direction:column;gap:var(--sp-3);">
+        <div class="contact-card-links">
+          <p class="contact-card__heading">Schnell-Links</p>
+          <div class="contact-card-links__list">
             <a href="skills.html" class="btn btn--outline-light">→ Fähigkeiten ansehen</a>
             <a href="portfolio.html" class="btn btn--outline-light">→ Portfolio ansehen</a>
             <a href="contact.html" class="btn btn--outline-light">→ Kontakt aufnehmen</a>
           </div>
         </div>
-
-      </div><!-- /.about-contact-card -->
+      </div>
 
     </div>
   </section>
 
-  <!-- ===== QUALIFIKATIONEN (Figma Screenshot 3 rechte Karte) ===== -->
   <section class="section section--sand" aria-labelledby="qual-title">
     <div class="container">
       <span class="label">Bildung &amp; Abschlüsse</span>
       <div class="section-header-box" id="qual-title">Qualifikationen</div>
 
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-6);" class="qual-grid">
+      <div class="qual-grid">
 
-        <!-- Fähigkeiten / Abschlüsse (grüne Box aus Screenshot) -->
-        <div class="fig-card fig-card--forest" role="region" aria-labelledby="fähigkeiten-box">
-          <h3 class="fig-card__title" id="fähigkeiten-box">Fähigkeiten</h3>
-          <ul style="display:flex;flex-direction:column;gap:var(--sp-3);list-style:disc;padding-left:var(--sp-5);">
-            <li style="font-size:var(--fs-sm);color:var(--sand);">Matura</li>
-            <li style="font-size:var(--fs-sm);color:var(--sand);">Abitur 1.9 NC</li>
-            <li style="font-size:var(--fs-sm);color:var(--sand);">Englisch B2</li>
-            <li style="font-size:var(--fs-sm);color:var(--sand);">Latinum</li>
-            <li style="font-size:var(--fs-sm);color:var(--sand);">HTML &amp; CSS (M293)</li>
-            <li style="font-size:var(--fs-sm);color:var(--sand);">Git &amp; GitHub</li>
+        <div class="fig-card fig-card--forest" role="region" aria-labelledby="faehigkeiten-box">
+          <h3 class="fig-card__title" id="faehigkeiten-box">Fähigkeiten</h3>
+          <ul class="qual-list">
+            <li class="qual-list__item">Matura</li>
+            <li class="qual-list__item">Abitur 1.9 NC</li>
+            <li class="qual-list__item">Englisch B2</li>
+            <li class="qual-list__item">Latinum</li>
+            <li class="qual-list__item">HTML &amp; CSS (M293)</li>
+            <li class="qual-list__item">Git &amp; GitHub</li>
           </ul>
         </div>
 
-        <!-- Portfolio Docs (aus Screenshot: Zeugnis-Vorschau) -->
         <div class="fig-card fig-card--coffee" role="region" aria-labelledby="portfolio-box">
           <h3 class="fig-card__title" id="portfolio-box">Portfolio Dokumente</h3>
-          <p class="fig-card__text" style="margin-bottom:var(--sp-6);">
+          <p class="fig-card__text doc-intro">
             Hier sind meine wichtigsten Zeugnisse und Zertifikate.
             Auf Anfrage stehe ich dir gerne für weitere Informationen zur Verfügung.
           </p>
-          <!-- Zeugnis-Platzhalter wie im Figma -->
-          <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-3);">
-            <div style="background:rgba(255,255,255,0.2);border-radius:var(--r-md);padding:var(--sp-4);text-align:center;">
-              <div style="font-size:1.5rem;margin-bottom:var(--sp-2);" aria-hidden="true">📄</div>
-              <div style="font-size:var(--fs-xs);opacity:0.8;">Zeugnis</div>
+          <div class="doc-grid">
+            <div class="doc-item">
+              <div class="doc-item__icon" aria-hidden="true">📄</div>
+              <div class="doc-item__label">Zeugnis</div>
             </div>
-            <div style="background:rgba(255,255,255,0.2);border-radius:var(--r-md);padding:var(--sp-4);text-align:center;">
-              <div style="font-size:1.5rem;margin-bottom:var(--sp-2);" aria-hidden="true">📜</div>
-              <div style="font-size:var(--fs-xs);opacity:0.8;">Zertifikat</div>
+            <div class="doc-item">
+              <div class="doc-item__icon" aria-hidden="true">📜</div>
+              <div class="doc-item__label">Zertifikat</div>
             </div>
-            <div style="background:rgba(255,255,255,0.2);border-radius:var(--r-md);padding:var(--sp-4);text-align:center;">
-              <div style="font-size:1.5rem;margin-bottom:var(--sp-2);" aria-hidden="true">🏆</div>
-              <div style="font-size:var(--fs-xs);opacity:0.8;">Diplom</div>
+            <div class="doc-item">
+              <div class="doc-item__icon" aria-hidden="true">🏆</div>
+              <div class="doc-item__label">Diplom</div>
             </div>
-            <div style="background:rgba(255,255,255,0.2);border-radius:var(--r-md);padding:var(--sp-4);text-align:center;">
-              <div style="font-size:1.5rem;margin-bottom:var(--sp-2);" aria-hidden="true">📋</div>
-              <div style="font-size:var(--fs-xs);opacity:0.8;">Bericht</div>
+            <div class="doc-item">
+              <div class="doc-item__icon" aria-hidden="true">📋</div>
+              <div class="doc-item__label">Bericht</div>
             </div>
           </div>
         </div>
@@ -212,31 +189,26 @@
     </div>
   </section>
 
-  <!-- ===== VIDEO ===== -->
   <section class="section section--bg" aria-labelledby="video-title">
     <div class="container">
       <span class="label">Stell dir vor</span>
       <h2 class="section-title" id="video-title">In 60 Sekunden — wer ich bin</h2>
       <p class="section-intro">Ein kurzes Video gibt dir einen persönlichen Einblick.</p>
-        <div class="video-wrap">
-          <video controls preload="metadata" poster="assets/images/video-thumb.jpg"
-                 aria-label="Vorstellungsvideo Michael Krumbacher">
-            <source src="assets/videos/intro.mp4" type="video/mp4" />
-            <source src="assets/videos/intro.webm" type="video/webm" />
-          </video>
-        </div>
+      <div class="video-wrap">
+        <video controls preload="metadata" poster="assets/images/video-thumb.jpg"
+               aria-label="Vorstellungsvideo Michael Krumbacher">
+          <source src="assets/videos/intro.mp4" type="video/mp4" />
+          <source src="assets/videos/intro.webm" type="video/webm" />
+        </video>
       </div>
     </div>
   </section>
 
-  <!-- ===== WERDEGANG ===== -->
   <section class="section section--sand" aria-labelledby="timeline-title">
     <div class="container">
       <span class="label">Mein Weg</span>
       <h2 class="section-title" id="timeline-title">Werdegang</h2>
-
       <div class="timeline" role="list">
-
         <div class="tl-item" role="listitem">
           <div class="tl-year-col"><span class="tl-year">2023</span></div>
           <div class="tl-body">
@@ -244,7 +216,6 @@
             <p class="tl-text">Ausbildungsstart an der GBS St.Gallen. Erste Schritte in HTML, CSS, Programmierlogik und Netzwerktechnik.</p>
           </div>
         </div>
-
         <div class="tl-item" role="listitem">
           <div class="tl-year-col"><span class="tl-year">2025</span></div>
           <div class="tl-body">
@@ -252,7 +223,6 @@
             <p class="tl-text">Erfolgreich das Abitur an der GBS St.Gallen abgeschlossen mit Note 1.9 NC.</p>
           </div>
         </div>
-
         <div class="tl-item" role="listitem">
           <div class="tl-year-col"><span class="tl-year">2025</span></div>
           <div class="tl-body">
@@ -260,14 +230,12 @@
             <p class="tl-text">Erstellung dieser Personal Website: Konzept in Figma, Umsetzung in HTML &amp; CSS, Veröffentlichung auf GitHub Pages.</p>
           </div>
         </div>
-
       </div>
     </div>
   </section>
 
 </main>
 
-<!-- FOOTER -->
 <footer class="footer" role="contentinfo">
   <div class="container">
     <div class="footer__grid">
